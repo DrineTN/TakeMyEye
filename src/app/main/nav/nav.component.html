@@ -1,17 +1,25 @@
 <div class="uk-position-top">
-    <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
-        <div class="uk-navbar-center">
-            <ul class="uk-navbar-nav">
-                <li class="uk-active"><a href="#">Home</a></li>
-                <li><a href="#"><span>Places</span></a></li>
-                <li><a href="#"><span>Blog</span></a></li>
-            </ul>
-        </div>
-        <div class="uk-navbar-right">
-            <ul class="uk-navbar-nav">
-                <li><a href="#"><span>Login</span></a></li>
-                <li><a href="#"><span>Register</span></a></li>
-            </ul>
-        </div>
-    </nav>
+    <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
+        <nav class="uk-navbar-container" uk-navbar style="position: relative; z-index: 980;">
+            <div class="uk-navbar-center">
+    
+                <ul class="uk-navbar-nav">
+                    <li class="uk-active"><a routerLink="/">Home</a></li>
+                    <li>
+                        <a routerLink="/place">Places</a>
+                
+                    </li>
+        
+                </ul>
+    
+            </div>
+            <div class="uk-navbar-right">
+    
+                <ul class="uk-navbar-nav">
+                    <li class="uk-active"><a href="#">Login</a></li>
+                </ul>
+    
+            </div>
+        </nav>
+    </div>
 </div>
